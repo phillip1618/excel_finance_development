@@ -28,6 +28,11 @@ Next I
 End If
 
 npv_value = NPV(period_discount_rate, payments)
+
+If pay_beginning_of_year = FALSE Then
+npv_value = npv_value / (1 + period_discount_rate)
+End If
+
 colaMpv2 = npv_value
 
 End Function
