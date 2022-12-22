@@ -18,11 +18,11 @@ Dim payments() As Double
 ReDim payments(periods)
 
 If cola_bool = True Then
-For I = 0 To (periods - 1)
+For I = 0 To (periods)
     payments(I) = period_payment * ((1 + period_inflation_rate) ^ I)
 Next I
 Else
-For I = 0 To (periods - 1)
+For I = 0 To (periods)
     payments(I) = period_payment
 Next I
 End If
