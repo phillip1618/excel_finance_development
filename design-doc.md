@@ -1,8 +1,8 @@
 # JJ Excel Finance Application (JJEFA)
 
-Author: Phillip Kim
-End User: JJ
-Reviewer:
+Author: Phillip Kim 
+End User: JJ 
+Reviewer: 
 
 ## Overview
 
