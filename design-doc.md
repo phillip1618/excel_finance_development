@@ -31,10 +31,12 @@ Each annuity plan would account for the following:
 - For all annuity plans, user would need to input:
     - client lump sum
     - interest/inflation rate
+    - start year
+    - end year
 
 - For each annuity plan that is being added, input fields:
-    - Annuity plan type
-    - annual payment/withdrawal
+    - Annuity plan duration
+    - annual payment/withdrawal amount
 
 - User can add up to 5 annuity plans' worth of data
 
