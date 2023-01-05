@@ -26,21 +26,17 @@ Each annuity plan would account for the following:
 
 ## User Interaction and Data Flow
 
-- User would have to unpackage application from their Sharepoint drive and open the application
-
-- For all annuity plans, user would need to input:
+1. User would have to unpackage application from their Sharepoint drive and open the application
+2. For all annuity plans, user would need to input:
     - client lump sum
     - interest/inflation rate
     - start year
     - end year
-
-- For each annuity plan that is being added, input fields:
+3. For each annuity plan that is being added, input fields:
     - Annuity plan duration
     - annual payment/withdrawal amount
-
-- User can add up to 5 annuity plans' worth of data
-
-- Each annuity plan data will be generated in a single column and in order of what's been inputted in the application from top to bottom
+4. User can add up to 5 annuity plans' worth of data
+5. Each annuity plan data will be generated in a single column and in order of what's been inputted in the application from top to bottom
 
 ![JJEFA User Flow Diagram](user_flow_diagram.png)
 
