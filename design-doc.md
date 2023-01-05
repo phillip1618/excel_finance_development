@@ -10,7 +10,9 @@ The JJEFA is a desktop application that automatically populates Excel worksheets
 
 Each annuity plan would account for the following:
 
-- different types of annuity plans
+- start year of withdrawal period
+- end year of withdrawal period
+- duration of annuity plan
 - client's lump sum
 - annual payment/withdrawal
 - interest/inflation rate
