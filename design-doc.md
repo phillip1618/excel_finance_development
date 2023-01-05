@@ -42,7 +42,7 @@ Each annuity plan would account for the following:
 
 ![JJEFA User Flow Diagram](user_flow_diagram.png)
 
-## Features
+## Application Features
 
 ## Architecture/Class Implementation
 
