@@ -40,7 +40,7 @@ Each annuity plan would account for the following:
 4. User can add up to 5 annuity plans' worth of data
 5. Each annuity plan data will be generated in a single column and in order of what's been inputted in the application from top to bottom
 
-![JJEFA User Flow Diagram](user_flow_diagram.png)
+![JJEFA User Flow Diagram](diagrams/user_flow_diagram.png)
 
 ## Application Features
 
