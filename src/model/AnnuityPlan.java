@@ -3,32 +3,48 @@ package src.model;
 import java.lang.Math;
 
 public class AnnuityPlan {
-    private double withdrawal;
-    private double duration;
-    private int compoundFrequency;
-    private double interest;
+    private double annuityWithdrawal;
+    private double annuityDuration;
+    private int annuityCompoundFrequency;
+    private double annuityInterest;
 
     public AnnuityPlan(double withdrawal, int duration, int compoundFrequency, double interest) {
-        this.withdrawal = withdrawal;
-        this.duration = duration;
-        this.compoundFrequency = compoundFrequency;
-        this.interest = interest;
+        annuityWithdrawal = withdrawal;
+        annuityDuration = duration;
+        annuityCompoundFrequency = compoundFrequency;
+        annuityInterest = interest;
     }
 
-    public double returnWithdrawal() {
-        return this.withdrawal;
+    public double getWithdrawal() {
+        return annuityWithdrawal;
     }
 
-    public double returnDuration() {
-        return this.duration;
+    public void setWithdrawal(double newWithdrawal) {
+        annuityWithdrawal = newWithdrawal;
     }
 
-    public int returnCompoundFrequency() {
-        return this.compoundFrequency;
+    public double getDuration() {
+        return annuityDuration;
     }
 
-    public double returnInterest() {
-        return this.interest;
+    public void setDuration(double newDuration) {
+        annuityDuration = newDuration;
+    }
+    
+    public int getCompoundFrequency() {
+        return annuityCompoundFrequency;
+    }
+
+    public void setCompoundFrequency(int newCompoundFrequency) {
+        annuityCompoundFrequency = newCompoundFrequency;
+    }
+
+    public double getInterest() {
+        return annuityInterest;
+    }
+
+    public void setInterest(double newInterest) {
+        annuityInterest = newInterest;
     }
 
     public static Double[] getCashFlows(double withdrawal, int duration, int compoundFrequency, double interest) {
@@ -44,7 +60,7 @@ public class AnnuityPlan {
 
     public static void main(String... arg) {
         AnnuityPlan obj = new AnnuityPlan(3000, 20, 4, 0.04);
-        System.out.println(obj.returnWithdrawal());
+        System.out.println(obj.getWithdrawal());
         Double[] cashFlows = new Double[80];
         cashFlows = AnnuityPlan.getCashFlows(3000, 20, 4, 0.04);
 
