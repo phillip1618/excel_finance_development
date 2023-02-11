@@ -11,9 +11,11 @@ public class ViewUI extends JFrame {
         JPanel mainPanel = getMainPanel();
         JPanel annuityPlanPanel = getAnnuityPlanPanel();
         JPanel annuityPlanConfigPanel = getAnnuityPlanConfigPanel();
+        JPanel submissionPanel = getSubmissionPanel();
 
         mainPanel.add(annuityPlanConfigPanel);
         mainPanel.add(annuityPlanPanel);
+        mainPanel.add(submissionPanel);
 
         add(mainPanel);
     }
@@ -101,6 +103,30 @@ public class ViewUI extends JFrame {
         }
 
         return annuityPlanPanel;
+    }
+
+    public JPanel getSubmissionPanel() {
+        JPanel submissionPanel = new JPanel(new GridBagLayout());
+        GridBagConstraints constr = new GridBagConstraints();
+        constr.insets = new Insets(5, 5, 5, 5);
+        constr.anchor = GridBagConstraints.WEST;
+
+        constr.gridx=0;
+        constr.gridy=0;
+
+        JLabel fileLocationLabel = new JLabel("File Location");
+        JTextField fileLocationText = new JTextField(25);
+        fileLocationText.setEditable(false);
+
+        JButton submitButton = new JButton("Submit");
+
+        submissionPanel.add(fileLocationLabel, constr);
+        constr.gridx=1;
+        submissionPanel.add(fileLocationText);
+        constr.gridx=0; constr.gridy=1;
+        submissionPanel.add(submitButton);
+
+        return submissionPanel;
     }
 
     public static void main(String... arg) {
