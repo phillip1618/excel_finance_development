@@ -31,35 +31,25 @@ public class ViewUI extends JFrame {
         constr.gridx=0;
         constr.gridy=0;
 
-        JLabel durationLabel1 = new JLabel("1. Annuity Plan Duration");
-        JLabel durationLabel2 = new JLabel("2. Annuity Plan Duration");
-        JLabel withdrawalLabel1 = new JLabel("1 Annual Withdrawal");
-        JLabel withdrawalLabel2 = new JLabel("2 Annual Withdrawal");
+        for (int i = 1; i < 6; i++) {
+            String numbering = Integer.toString(i);
 
-        JTextField durationText1 = new JTextField(10);
-        JTextField durationText2 = new JTextField(10);
-        JTextField withdrawalText1 = new JTextField(10);
-        JTextField withdrawalText2 = new JTextField(10);
+            JLabel durationLabel = new JLabel(numbering + ". Annuity Plan Duration");
+            JLabel withdrawalLabel = new JLabel("Withdrawal Amount");
 
-        annuityPlanPanel.add(durationLabel1, constr);
-        constr.gridx=1;
-        annuityPlanPanel.add(durationText1, constr);
-        constr.gridx=2;
-        annuityPlanPanel.add(withdrawalLabel1, constr);
-        constr.gridx=3;
-        annuityPlanPanel.add(withdrawalText1, constr);
-        constr.gridx=0; constr.gridy=1;
+            JTextField durationText = new JTextField(10);
+            JTextField withdrawalText = new JTextField(10);
 
-        annuityPlanPanel.add(durationLabel2, constr);
-        constr.gridx=1;
-        annuityPlanPanel.add(durationText2, constr);
-        constr.gridx=2;
-        annuityPlanPanel.add(withdrawalLabel2, constr);
-        constr.gridx=3;
-        annuityPlanPanel.add(withdrawalText2, constr);
+            annuityPlanPanel.add(durationLabel, constr);
+            constr.gridx=1;
+            annuityPlanPanel.add(durationText, constr);
+            constr.gridx=2;
+            annuityPlanPanel.add(withdrawalLabel, constr);
+            constr.gridx=3;
+            annuityPlanPanel.add(withdrawalText, constr);
+            constr.gridx=0; constr.gridy+=1;
 
-        constr.gridwidth = 2;
-        constr.anchor = GridBagConstraints.CENTER;
+        }
 
         return annuityPlanPanel;
     }
