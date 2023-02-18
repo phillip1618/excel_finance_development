@@ -1,18 +1,19 @@
 package src.model;
 
 public class Model {
-    private double annuityInterest;
+    private double annuityDiscountRate;
     private int startYear;
     private int endYear;
     private double lumpSum;
+    private boolean cola;
     private AnnuityPlan[] annuityPlanArray;
 
-    public double getAnnuityInterest() {
-        return annuityInterest;
+    public double getAnnuityDiscountRate() {
+        return annuityDiscountRate;
     }
 
-    public void setAnnuityInterest(double newAnnuityInterest) {
-        annuityInterest = newAnnuityInterest;
+    public void setAnnuityDiscountRate(double newAnnuityDiscountRate) {
+        annuityDiscountRate = newAnnuityDiscountRate;
     }
 
     public int getStartYear() {
@@ -45,5 +46,13 @@ public class Model {
 
     public void setAnnuityPlanArray(AnnuityPlan[] newAnnuityPlanArray) {
         annuityPlanArray = newAnnuityPlanArray;
+    }
+
+    public boolean getCOLA() {
+        return cola;
+    }
+
+    public void setCOLA(boolean newCOLA) {
+        cola = newCOLA;
     }
 }
